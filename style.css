@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
 :root {
-    --openSans: 'Open Sans', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
     --poppins: 'Poppins', sans-serif;
     --fw400: 400;
     --fw600: 600;
     --violet: hsl(257, 40%, 49%);
-    --soft-magenta: hsl(300, 69%, 71%)
+    --soft-magenta: hsl(300, 69%, 71%);
 }
 
 * {
@@ -65,7 +65,7 @@ body {
 }
 
 .block p {
-    font-family: var(--openSans);
+    font-family: var(--open-sans);
     font-weight: var(--fw400);
     line-height: 1.6;
     margin: 25px 25px;
@@ -115,7 +115,7 @@ a.btn {
     text-align: center;
 }
 
-@media (min-width: 1044px) {
+@media (min-width: 1040px) {
     body {
         max-width: 100%;
         background-image: url('images/bg-desktop.svg');
@@ -225,7 +225,6 @@ a.btn {
         position: absolute;
         top: -10px;
         left: -20px;
-        /* margin-left:-5px;   */
     }
 
     .block {
