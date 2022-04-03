@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --openSans: 'Open Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+    --fw400: 400;
+    --fw600: 600;
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    max-width: 375px;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px 2px rgba(30, 29, 30, 0.34);
+    background-image: url('images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: var(--violet);
+}
+
+.logo {
+    width: 100%;
+}
+
+.logo img {
+    flex-grow: 1;
+    width: 40%;
+    margin: 20px 30px;
+}
+
+.page {
+    text-align: center;
+}
+
+.illustration img {
+    width: 80%;
+    margin: 44px 0;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.block h1 {
+    font-weight: var(--fw600);
+    font-family: var(--poppins);
+    padding: 0 30px;
+    line-height: 1.5;
+}
+
+.block p {
+    font-family: var(--openSans);
+    font-weight: var(--fw400);
+    line-height: 1.6;
+    margin: 25px 25px;
+}
+
+.block p span {
+    white-space: pre;
+}
+
+a.btn {
+    width: 55%;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    background-color: white;
+    color: var(--violet);
+    font-family: var(--poppins);
+    font-size: 14px;
+    line-height: 1.6;
+    border-radius: 25px;
+    box-shadow: 0 3px 10px 2px rgba(30, 29, 30, 0.34);
+}
+
+.socials {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.social {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.social i {
+    padding: 9px;
+    font-size: 16px;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.attribution {
+    color: white;
+    font-size: 11px;
+    text-align: center;
+}
+
+@media (min-width: 1044px) {
+    body {
+        max-width: 100%;
+        background-image: url('images/bg-desktop.svg');
+        background-size: contain;
+        background-position: center;
+        background-attachment: fixed;
+        background-position-x: left;
+    }
+
+    .logo img {
+        width: 12%;
+        margin: 65px 95px;
+    }
+
+    .page {
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .illustration {
+        position: relative;
+        width: 100%;
+    }
+
+    .illustration img {
+        width: 95%;
+        position: absolute;
+        top: 0px;
+        left: 0;
+    }
+
+    .block {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: stretch;
+        width: 60%;
+        text-align: left;
+        margin: 50px 0 0;
+        padding-top: 45px;
+        position: relative;
+    }
+
+    .block h1 {
+        font-size: 36px;
+        padding: 0 57px 0 10px;
+        line-height: 1.6;
+        flex-basis: 20%;
+    }
+
+    .block p {
+        margin: 25px 5px 30px 10px;
+    }
+
+    .block p span {
+        white-space: normal;
+    }
+
+    a.btn {
+        width: 35%;
+        text-align: center;
+        padding: 10px 20px;
+        margin: 0 10px;
+        margin-bottom: 50px;
+    }
+
+    a.btn:hover {
+        background-color: var(--soft-magenta);
+        color: white;
+        cursor: pointer;
+    }
+
+    .socials {
+        flex-grow: 2;
+        align-self: flex-end;
+        margin: 0px;
+        position: fixed;
+        right: 60px;
+        bottom: 40px;
+    }
+
+    .social {
+        margin: 0 5px;
+    }
+
+    .social i:hover {
+        color: var(--soft-magenta);
+        border-color: var(--soft-magenta);
+        cursor: pointer;
+    }
+
+    footer {
+        margin-top: 150px;
+    }
+
+}
+
+@media (min-width: 1920px) {
+
+    .illustration img {
+        width: 85%;
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        /* margin-left:-5px;   */
+    }
+
+    .block {
+        width: 70%;
+        padding-top: 45px;
+    }
+
+    .block h1 {
+        font-size: 46px;
+        padding: 0;
+    }
+
+    .block p {
+        font-size: 20px;
+        margin: 25px 5px 30px 5px;
+        padding-right: 120px;
+    }
+
+    a.btn {
+        width: 30%;
+        text-align: center;
+        padding: 15px 20px;
+        margin: 0;
+    }
+
+    .social i {
+        padding: 10px;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
