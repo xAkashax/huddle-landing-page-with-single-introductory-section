@@ -180,6 +180,7 @@ a.btn {
         padding: 10px 20px;
         margin: 0 10px;
         margin-bottom: 50px;
+        transition: 0.5s linear;
     }
 
     a.btn:hover {
@@ -199,6 +200,10 @@ a.btn {
 
     .social {
         margin: 0 5px;
+    }
+    
+    .social i {
+        transition: 0.5s linear;
     }
 
     .social i:hover {
