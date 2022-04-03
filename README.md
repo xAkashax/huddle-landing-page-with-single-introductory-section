@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontendmentor.io](https://your-solution-url.com)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [Frontendmentor.io](https://www.frontendmentor.io/solutions/huddle-landing-page-with-a-single-introductory-section-rJMrYiDXq)
+- Live Site URL: [Live Demo](https://heroic-sundae-986708.netlify.app/)
 
 ## My process
 
